@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b39dbb;
+    color: #333;
+    line-height: 1.6;
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: #d6bcdf;
+    height: 100vh;
+    max-width: 800px;
+}
+
+main > img {
+    width: 100%;
+    height: auto;
+}
+
+main #redes {
+    display: flex;
+    flex-direction: column;
+}
+
+main #redes .rede {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main #redes .rede a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- INSTAGRAM --- */
+main .rede#instagram {
+    background: #705b77
+}
+
+main .rede#instagram:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+/* --- WHATSAPP --- */
+main .rede#whatsapp {
+    background: #705b77
+}
+
+main .rede#whatsapp:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+main #fotos {
+    display: flex;
+    flex-direction: column;
+}
+
+main #fotos #column1 {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+main #fotos #column1-row1 {
+    border-right: 5px solid black;
+    flex: 2.573;
+}
+
+main #fotos #column2-row2-column1 {
+    border-bottom: 5px solid black;
+}
+
+main #fotos #column1-row2 {
+    flex: 2;
+}
+
+main #fotos #column3 {
+    display: flex;
+    flex-direction: row;
+}
+
+main #fotos #column3-row1 {
+    flex: 1;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+main #fotos #column3-row2 {
+    flex: 1;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+main #fotos #column2 {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+main #fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+main #precos {
+    /* padding: 25px; */
+}
+
+table {
+    border: none;
+    background-color: #d6bcdf;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #d6bcdf;
+    background-color: #705b77;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+/* --- Versão MOBILE --- */
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+}
